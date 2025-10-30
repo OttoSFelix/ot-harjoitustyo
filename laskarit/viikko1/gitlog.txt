@@ -1,0 +1,48 @@
+commit 13a277f1883b1b16c59ec7cee13e8487b1eea4c4
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:52:13 2025 +0200
+    file22
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+commit 0e0b88a8b64e0a8613bfb6f0c684e60a930ea2ad
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:49:02 2025 +0200
+    file123
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+commit 1a5002a62a970cc181cbab81b1249caa34e16f4e
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:44:04 2025 +0200
+    kolmas
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+commit 9edad200bf3b12f8c5d4fd3db7fac2e097143131
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:42:38 2025 +0200
+    eka.txt
+ tiedosto.txt | 1 -
+ 1 file changed, 1 deletion(-)
+commit 0961960b0b926095743b98003c54b08be82609aa
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:41:54 2025 +0200
+    toinen
+ eka.txt    | 1 +
+ toinen.txt | 0
+ 2 files changed, 1 insertion(+)
+commit 0cb6ebcbd8372a1c3a388a760c505ad3cf8a11ba
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:38:37 2025 +0200
+    muutos ja lisäys
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+commit 41928999882e8ef78ad59680d24f59e3242e76f5
+Author: OttoSFelix <otto.suokas@helsinki.fi>
+Date:   Wed Oct 29 17:36:48 2025 +0200
+    tiedosto.txt luotu
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
