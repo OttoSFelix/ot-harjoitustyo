@@ -8,8 +8,8 @@
     Ruutu "1" -- "1" Ruutu : seuraava
     Ruutu "1" -- "1" Ruutu : Aloitusruutu
     Ruutu "1" -- "1" Ruutu : Vankila
-    Pelilauta "1" -- "1" Ruutu : Vankila
-    Pelilauta "1" -- "1" Ruutu : Aloitusruutu
+    Monopolipeli "1" -- "1" Ruutu : Vankila
+    Monopolipeli "1" -- "1" Ruutu : Aloitusruutu
     Ruutu "1" -- "1" Ruutu : Sattuma
     Ruutu "1" -- "1" Ruutu : Yhteismaa
     Ruutu "1" -- "1" Ruutu : Asema
