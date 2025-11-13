@@ -15,14 +15,14 @@
     Ruutu "1" -- "1" Ruutu : Asema
     Ruutu "1" -- "1" Ruutu : Laitos
     Ruutu "1" -- "1" Ruutu : Katu
-    Ruutu : Sattuma "1" -- "1" Kortti
-    Ruutu : Yhteismaa "1" -- "1" Kortti
+    Kortti "1" -- "1" Ruutu : Sattuma
+    Kortti "1" -- "1" Ruutu : Yhteismaa
     Kortti "1" -- "1" Toiminto
     Ruutu "1" -- "1" Toiminto
     Ruutu "1" -- "0..8" Pelinappula
-    Ruutu : Katu "1" -- "4" Talo
-    Ruutu : Katu "1" -- "1" Hotelli
-    Ruutu : Katu "1" -- "0..1" Pelaaja
+    Talo "4" -- "1" Ruutu : Katu
+    Hotelli "1" -- "1" Ruutu : Katu
+    Pelaaja "0..1" -- "1" Ruutu : Katu
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
 ```
