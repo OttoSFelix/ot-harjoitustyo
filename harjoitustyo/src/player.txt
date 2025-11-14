@@ -1,0 +1,40 @@
+Sarjapelit aikavälillä: 17.08.2000 - 25.10.2100
+2025-10-04 | Sarja | SM | 2-6 |  | 3 | Räsänen Mika | PT Espoo |  |  | Laane Lauri | TIP-70 |  |  | -3,7,3,6 | 1 | 1 | 147685
+2025-10-04 | Sarja | SM | 2-6 |  | 5 | Räsänen Mika | PT Espoo |  |  | Tooming Robi | TIP-70 |  |  | 8,8,5 | 1 | 1 | 147687
+2025-10-04 | Sarja | SM | 5-2 |  | 3 | Vesalainen Matias | KoKa |  |  | Räsänen Mika | PT Espoo |  |  | -7,8,-5,10,-10 | 1 | 1 | 147698
+2025-10-04 | Sarja | SM | 5-2 |  | 6 | Kanasuo Esa | KoKa |  |  | Räsänen Mika | PT Espoo |  |  | -8,-3,-5 | 1 | 1 | 147701
+2025-10-05 | Sarja | SM | 2-8 |  | 2 | Räsänen Mika | PT Espoo |  |  | Lehtlaan Pert Marten | PT Jyväskylä |  |  | 5,10,7 | 1 | 1 | 147795
+2025-10-05 | Sarja | SM | 2-8 |  | 6 | Räsänen Mika | PT Espoo |  |  | Tuuttila Juhana | PT Jyväskylä |  |  | 5,9,9 | 1 | 1 | 147799
+2025-10-05 | Sarja | SM | 2-8 |  | 7 | Räsänen Mika | PT Espoo | Jobs Hugo | PT Espoo | Pukk Markkos | PT Jyväskylä | Lehtlaan Pert Marten | PT Jyväskylä | -10,9,-7,4,3 | 1 | 1 | 147800
+2025-10-05 | Sarja | SM | 7-2 |  | 3 | Kahlos Juho | Smash |  |  | Räsänen Mika | PT Espoo |  |  | 5,-7,9,7 | 1 | 1 | 147845
+2025-10-05 | Sarja | SM | 7-2 |  | 6 | Nguyen Long | Smash |  |  | Räsänen Mika | PT Espoo |  |  | 5,-10,-7,-8 | 1 | 1 | 147848
+2025-10-05 | Sarja | SM | 7-2 |  | 7 | Neumaier Marcel | Smash | Kahlos Juho | Smash | Jobs Hugo | PT Espoo | Räsänen Mika | PT Espoo | 9,-11,-15,3,-9 | 1 | 1 | 147849
+
+ 
+Kilpailupelit aikavälillä: 17.08.2000 - 25.10.2100
+2025-08-15 00:00:00 | Elokuun kansalliset, Espoo | MK | cup8 |  | 2 | Kahlos Juho | Smash |  |  | Räsänen Mika | PT Espoo |  |  | 8,7,-12,6 | 1 | 1 | 129749
+2025-08-15 00:00:00 | Elokuun kansalliset, Espoo | MK | pooli | B | 1-2 | Räsänen Mika | PT Espoo |  |  | Matyko Vladyslav | MBF |  |  | 6,8,9 | 0 | 1 | 129738
+2025-08-15 00:00:00 | Elokuun kansalliset, Espoo | MK | pooli | B | 1-3 | Räsänen Mika | PT Espoo |  |  | Andersson Riku | UU |  |  | -9,4,5,-9,3 | 0 | 1 | 129734
+2025-08-15 00:00:00 | Elokuun kansalliset, Espoo | MK | pooli | B | 1-4 | Räsänen Mika | PT Espoo |  |  | Sjöberg Tommi | TuKa |  |  | 3,4,8 | 0 | 1 | 129736
+2025-09-07 00:00:00 | Syksyn_startti_su.txt | MK | jatko |  |  | Kahlos Juho | Smash |  |  | Räsänen Mika | PT Espoo |  |  | 8,-4,9,7 | 0 | 1 | 131203
+2025-09-07 00:00:00 | Syksyn_startti_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Viherlaiho Leon | MBF |  |  | 10,5,10 | 0 | 1 | 131202
+2025-09-07 00:00:00 | Syksyn_startti_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Matyko Vladyslav | MBF |  |  | 5,6,5 | 0 | 1 | 131200
+2025-09-07 00:00:00 | Syksyn_startti_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Vihreälaakso Eeka | PTS Sherwood |  |  | 6,7,6 | 0 | 1 | 131184
+2025-09-07 00:00:00 | Syksyn_startti_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Takkavuori Max | KoKa |  |  | 10,8,4 | 0 | 1 | 131182
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | cup16 |  | 2 | Kahlos Juho | Smash |  |  | Räsänen Mika | PT Espoo |  |  | 8,-9,7,-6,8 | 1 | 1 | 131551
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | cup16 |  | 3 | Tran Huy | PT 75 |  |  | Räsänen Mika | PT Espoo |  |  | -8,-3,-8 | 1 | 1 | 131554
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | cup16 |  | 4 | Perkkiö Markus | PT Jyväskylä |  |  | Räsänen Mika | PT Espoo |  |  | -7,-12,9,-5 | 1 | 1 | 131556
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | pooli | D | 1-2 | Räsänen Mika | PT Espoo |  |  | Lehtonen Tomi | PT Jyväskylä |  |  | 12,5,-10,5 | 0 | 1 | 131528
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | pooli | D | 1-3 | Räsänen Mika | PT Espoo |  |  | Visuri Axel | PT 75 |  |  | 8,9,3 | 0 | 1 | 131526
+2025-09-20 00:00:00 | Tampere GP, PT 75 (A) | MK GP | pooli | D | 1-4 | Räsänen Mika | PT Espoo |  |  | Nguyen Ha | Smash |  |  | 11,8,8 | 0 | 1 | 131530
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | cup16 |  | 2 | Tennilä Otto | PT 75 |  |  | Räsänen Mika | PT Espoo |  |  | 9,6,7 | 1 | 1 | 134312
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | cup16 |  | 3 | Rauvola Mika | Smash |  |  | Räsänen Mika | PT Espoo |  |  | -6,-8,8,-5 | 1 | 1 | 134315
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | cup16 |  | 4 | Äänismaa Juha | TuKa |  |  | Räsänen Mika | PT Espoo |  |  | 12,-5,-9,-8 | 1 | 1 | 134317
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | pooli | D | 1-2 | Räsänen Mika | PT Espoo |  |  | Nguyen Hai | Smash |  |  | 6,4,6 | 0 | 1 | 134289
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | pooli | D | 1-3 | Räsänen Mika | PT Espoo |  |  | Lappi Vesa | Wega |  |  | 7,6,6 | 0 | 1 | 134287
+2025-10-25 00:00:00 | PT Espoo syyskisat GP (Valio) | MK GP | pooli | D | 1-4 | Räsänen Mika | PT Espoo |  |  | Räsänen Erik | Maraton |  |  | 2,3,5 | 0 | 1 | 134291
+2025-11-09 00:00:00 | Starvember_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Viskman Marek | TIP-70 |  |  | 4,10,6 | 0 | 1 | 136020
+2025-11-09 00:00:00 | Starvember_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Anton Gabriel | TuPy |  |  | 6,7,10 | 0 | 1 | 135996
+2025-11-09 00:00:00 | Starvember_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Matyko Vladyslav | MBF |  |  | 10,-12,4,3 | 0 | 1 | 135994
+2025-11-09 00:00:00 | Starvember_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Takkavuori Max | KoKa |  |  | 7,6,5 | 0 | 1 | 135992
+2025-11-09 00:00:00 | Starvember_su.txt | MK | jatko |  |  | Räsänen Mika | PT Espoo |  |  | Kärner Meelis | PT Espoo |  |  | -9,2,15,11 | 0 | 1 | 136022
