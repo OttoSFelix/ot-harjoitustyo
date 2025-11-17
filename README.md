@@ -9,6 +9,7 @@ By **OttoSFelix**
 - 
 ## Dokumentaatio
 
+- [käyttöohje](./harjoitustyo/dokumentaatio/kayttoohje.md)
 - [vaatimusmäärittely](./harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
 - [työaikakirjanpito](./harjoitustyo/dokumentaatio/tyoaikakirjanpito.md)
 - [changelog](./harjoitustyo/dokumentaatio/changelog.md)
