@@ -7,8 +7,8 @@ from playerinfo import Player
 def initialize_matches_table():
     connection = get_database_connection()
     cursor = connection.cursor()
-    cursor.execute('DROP TABLE IF EXISTS Matches')
-    cursor.execute('CREATE TABLE Matches(date text, match_type text, division text, player_name text, player_club text, opponent_name text, opponent_club text, score text, total text, outcome text)')
+    cursor.execute('DROP TABLE IF EXISTS All_matches')
+    cursor.execute('CREATE TABLE All_matches(date text, match_type text, division text, player_name text, player_club text, opponent_name text, opponent_club text, score text, total text, outcome text)')
     connection.commit()
     print('init tehty')
 
@@ -203,8 +203,9 @@ def get_player_matches_test(id, name):
                 
                 connection = get_database_connection()
                 cursor = connection.cursor()
-                cursor.execute('INSERT INTO Matches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
+                cursor.execute('INSERT INTO Testmatches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
             else:
+                print('virhe')
                 continue
         connection.commit()
         
@@ -278,16 +279,40 @@ def get_player_matches(player: Player):
                 else:
                     print('virhe playername osiossa')
                 
-                cursor.execute('INSERT INTO Matches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
+                cursor.execute('INSERT INTO All_matches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
             else:
                 continue
         connection.commit()
         
 
-initialize_matches_table()
-x = 1
-for player in get_players():
-    get_player_matches(player)
-    print(x)
-    x += 1
+
+def get_player_base_stats(name):
+    name = name.strip()
+    connection = get_database_connection()
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM Ratinglist WHERE name == ?', (name,))
+    row = cursor.fetchall()
+    if not row:
+        return(f"Couldn't find player named {name}")
+    row = row[0]
+    player = Player(row[0], row[1], row[2], row[3], row[4])
+    cursor.execute('SELECT * FROM All_matches WHERE player_name == ?', (name,))
+    rows = cursor.fetchall()
+    if not rows:
+        return(f"Couldn't find matches for {name}")
+    wins = 0
+    losses = 0
+    for row in rows:
+        if row[9] == 'win':
+            wins += 1
+        elif row[9] == 'lose':
+            losses += 1
+        else:
+            print(f'{row} error while parsing outcome')
+            return
+    winrate = (wins / (wins + losses)) * 100
+    winrate = str(round(winrate, 2))
+    return f'{str(player)} , all time wins: {wins}, all time losses: {losses} --  All time win rate: {winrate}% '
+
+
 

@@ -7,5 +7,5 @@ class Player:
         self.id = id
 
     def __str__(self):
-        return(f'{self.rank}, {self.name}, {self.id}, {self.club}, {self.rating}')
+        return(f'{self.rank} {self.name} {self.club} {self.rating}')
         
