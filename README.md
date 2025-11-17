@@ -30,6 +30,7 @@ komennolla:
 poetry run invoke start
 ```
 
+- Jos sovellus ei tunnista rating_database.db tiedostoa tietokannaksi, runaa ensin ```bash poetry run invoke start ```
 
 ## Muut komentorivitoiminnot
 
