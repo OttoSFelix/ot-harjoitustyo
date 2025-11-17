@@ -12,3 +12,39 @@ By **OttoSFelix**
 - [vaatimusmäärittely](./harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
 - [työaikakirjanpito](./harjoitustyo/dokumentaatio/tyoaikakirjanpito.md)
 - [changelog](./harjoitustyo/dokumentaatio/changelog.md)
+
+
+## Asennus
+
+1. Asenna riippuvuudet komennolla:
+
+```bash
+poetry install
+```
+
+2. Sovelluksen saa käyntiin komennolla:
+komennolla:
+
+```bash
+poetry run invoke start
+```
+
+
+## Muut komentorivitoiminnot
+
+### Testaus
+
+Testit suoritetaan komennolla:
+
+```bash
+poetry run invoke test
+```
+
+### Testikattavuus
+
+Testikattavuusraportin saa komennolla:
+
+```bash
+poetry run invoke coverage-report
+```
+
