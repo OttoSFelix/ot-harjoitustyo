@@ -1,0 +1,97 @@
+Sarjapelit aikavälillä: 17.08.2000 - 25.10.2100
+2017-10-11 | Sarja | 6A | 5-6 |  | 2 | Kinnunen Vili | TIP-70 |  |  | Gasbarra Dario | MBF |  |  | 6,8,-5,3 | 1 | 1 | 74487
+2017-10-11 | Sarja | 6A | 5-6 |  | 4 | Kinnunen Vili | TIP-70 |  |  | Eldishnawy Dish | MBF |  |  | 1,9,-10,6 | 1 | 1 | 74489
+2017-10-11 | Sarja | 6A | 5-6 |  | 7 | Kinnunen Vili | TIP-70 | Tossavainen Miko | TIP-70 | Eldishnawy Dish | MBF | Mäkelä Heli | Boom | 8,8,-7,7 | 1 | 1 | 74492
+2017-10-28 | Sarja | 6A | 4-5 |  | 3 | Lindholm Paul | Maraton |  |  | Kinnunen Vili | TIP-70 |  |  | -8,4,-7,7,-9 | 1 | 1 | 75191
+2017-10-28 | Sarja | 6A | 4-5 |  | 5 | Weckström Jens | Maraton |  |  | Kinnunen Vili | TIP-70 |  |  | 5,6,7 | 1 | 1 | 75192
+2017-10-28 | Sarja | 6A | 4-5 |  | 7 | Weckström Jens | Maraton | Lindholm Paul | Maraton | Kinnunen Vili | TIP-70 | Kim Woobin | TIP-70 | 6,4,8 | 1 | 1 | 75194
+2017-10-28 | Sarja | 6A | 4-5 |  | 8 | Hietanen Carolina | Maraton |  |  | Kinnunen Vili | TIP-70 |  |  | -6,-9,-8 | 1 | 1 | 75195
+2017-11-13 | Sarja | 6A | 3-5 |  | 2 | Khirug Fedor | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -4,-4,-3 | 1 | 1 | 76951
+2017-11-13 | Sarja | 6A | 3-5 |  | 6 | Krivov Ilja | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -4,-6,-5 | 1 | 1 | 76955
+2017-12-14 | Sarja | 6A | 1-5 |  | 2 | Shevnin Dmitrii | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -10,-6,-5 | 1 | 1 | 79036
+2017-12-14 | Sarja | 6A | 1-5 |  | 6 | Siljuk Jegor | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -4,-10,-10 | 1 | 1 | 79040
+2017-12-14 | Sarja | 6A | 1-5 |  | 7 | Siljuk Jegor | Spinniskola | Shevnin Dmitrii | Spinniskola | Joesaar Karl | TIP-70 | Kinnunen Vili | TIP-70 | -5,-8,-7 | 1 | 1 | 79041
+2017-11-20 | Sarja | 6A | 2-5 |  | 1 | Kolzhanov Sergei | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -2,-8,-8 | 1 | 1 | 78028
+2017-11-20 | Sarja | 6A | 2-5 |  | 4 | Gradov Leonid | Spinniskola |  |  | Kinnunen Vili | TIP-70 |  |  | -2,-7,8,-6 | 1 | 1 | 78031
+2018-04-21 | Sarja | 3EF-YL | 2-6 |  | 2 | Kinnunen Vili | TIP-70 |  |  | Virtanen Jyrki | HäKi |  |  | 5,12,-9,9 | 1 | 1 | 84031
+2018-04-21 | Sarja | 3EF-YL | 2-6 |  | 4 | Kinnunen Vili | TIP-70 |  |  | Lipponen Juha | IPT-94 |  |  | -8,8,-3,-14 | 1 | 1 | 84033
+2018-04-21 | Sarja | 3EF-YL | 2-6 |  | 7 | Hyytiäinen Leevi | MBF | Kinnunen Vili | TIP-70 | Pohjalahti Risto | HäKi | Lipponen Juha | IPT-94 | -7,-8,-11 | 1 | 1 | 84036
+2018-04-21 | Sarja | 3EF-YL | 2-6 |  | 8 | Kinnunen Vili | TIP-70 |  |  | Huotari Mikko | HUT |  |  | -9,-5,-8 | 1 | 1 | 84037
+2018-04-21 | Sarja | 3EF-YL | 2-8 |  | 3 | Kinnunen Vili | TIP-70 |  |  | Marjamäki Pertti | UU |  |  | -7,4,-3,6,4 | 1 | 1 | 84106
+2018-04-21 | Sarja | 3EF-YL | 2-8 |  | 6 | Kinnunen Vili | TIP-70 |  |  | Laaksonen Rami | UU |  |  | -7,-1,-10 | 1 | 1 | 84109
+2018-04-21 | Sarja | 3EF-YL | 2-8 |  | 7 | Tran Daniel | TIP-70 | Kinnunen Vili | TIP-70 | Wagner Sauli | UU | Marjamäki Pertti | UU | -3,11,-9,-9 | 1 | 1 | 84110
+2018-04-21 | Sarja | 3EF-YL | 7-2 |  | 2 | Hiltunen Tuomas | TuPy |  |  | Kinnunen Vili | TIP-70 |  |  | 6,5,6 | 1 | 1 | 84089
+2018-04-21 | Sarja | 3EF-YL | 7-2 |  | 6 | Suotmaa Juha | TuTo |  |  | Kinnunen Vili | TIP-70 |  |  | 3,7,4 | 1 | 1 | 84093
+2018-02-14 | Sarja | 6A | 6-5 |  | 1 | Merilahti Rocka | Wega |  |  | Kinnunen Vili | TIP-70 |  |  | 7,6,6 | 1 | 1 | 83820
+2018-02-14 | Sarja | 6A | 6-5 |  | 4 | Rinnevuori Mikko | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | -7,-7,7,-9 | 1 | 1 | 83823
+2018-02-14 | Sarja | 6A | 6-5 |  | 7 | Merilahti Rocka | Wega | Mäkelä Heli | Boom | Kinnunen Vili | TIP-70 | Joesaar Karl | TIP-70 | -6,-6,12,-7 | 1 | 1 | 83826
+ | Sarja | 6A |  |  | 1 | Kinnunen Vili | TIP-70 |  |  | Lindholm Paul | Maraton |  |  | -6,2,-2,4,7 | 1 | 1 | 81549
+ | Sarja | 6A |  |  | 3 | Kinnunen Vili | TIP-70 |  |  | Ruhala Marko | Maraton |  |  | 2,2,2 | 1 | 1 | 81551
+ | Sarja | 6A |  |  | 5 | Kinnunen Vili | TIP-70 |  |  | Ruhala Marko | Maraton |  |  | wo | 1 | 1 | 81553
+ | Sarja | 6A |  |  | 6 | Kinnunen Vili | TIP-70 |  |  | Ruhala Marko | Maraton |  |  | -wo | 1 | 1 | 81554
+ | Sarja | 6A |  |  | 7 | Kinnunen Vili | TIP-70 | Kinnunen Ari | TIP-70 | Lindholm Paul | Maraton | Ruhala Marko | Maraton | -5,6,-10,8,-8 | 1 | 1 | 81555
+ | Sarja | 6A |  |  | 9 | Kinnunen Vili | TIP-70 |  |  | Lindholm Paul | Maraton |  |  | wo | 1 | 1 | 81557
+2018-03-19 | Sarja | 6A | 5-4 |  | 2 | Kinnunen Vili | TIP-70 |  |  | Lindholm Paul | Maraton |  |  | -5,10,-9,7,4 | 1 | 1 | 81666
+2018-03-19 | Sarja | 6A | 5-4 |  | 4 | Kinnunen Vili | TIP-70 |  |  | -luovuttaja wo | - |  |  | wo | 1 | 1 | 81668
+2018-03-19 | Sarja | 6A | 5-4 |  | 7 | Kinnunen Vili | TIP-70 | Kinnunen Ari | TIP-70 | Lindholm Paul | Maraton | Ruhala Marko | Maraton | -5,6,-10,6,-8 | 1 | 1 | 81671
+2018-03-19 | Sarja | 6A | 5-4 |  | 8 | Kinnunen Vili | TIP-70 |  |  | Ruhala Marko | Maraton |  |  | 9,9,10 | 1 | 1 | 81672
+
+ 
+Kilpailupelit aikavälillä: 17.08.2000 - 25.10.2100
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 1-5 | Kettula Leo | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | 3,6,13 | 1 | 1 | 60295
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 2-5 | Jansson Lauri | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | -8,11,14,-10,1 | 1 | 1 | 60292
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 3-5 | Seppänen Alexandra | PT Jyväskylä |  |  | Kinnunen Vili | TIP-70 |  |  | -8,-4,-9 | 1 | 1 | 60289
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 4-5 | Tossavainen Miko | TIP-70 |  |  | Kinnunen Vili | TIP-70 |  |  | 11,5,2 | 1 | 1 | 60303
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 5-6 | Kinnunen Vili | TIP-70 |  |  | Kellow Ella | OPT-86 |  |  | wo | 1 | 0 | 60307
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | MK15, MK13 ja NK11 | pooli | A | 5-7 | Kinnunen Vili | TIP-70 |  |  | Kim Woobin | TIP-70 |  |  | 0,4,7 | 1 | 1 | 60300
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 1-6 | Eldishnawy Dish | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | -wo | 1 | 0 | 60336
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 2-6 | Grönlund Hannu | Atlas |  |  | Kinnunen Vili | TIP-70 |  |  | -12,-10,14,-9 | 1 | 1 | 60333
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 3-6 | Jansson Lauri | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | 7,6,8 | 1 | 1 | 60342
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 4-6 | Kangas Martti | PeTo |  |  | Kinnunen Vili | TIP-70 |  |  | 5,-9,-11,11.2,-8 | 1 | 1 | 60339
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 5-6 | Tossavainen Miko | TIP-70 |  |  | Kinnunen Vili | TIP-70 |  |  | -6,-9,-9 | 1 | 1 | 60352
+2017-09-09 00:00:00 | Helsingin piirinmestaruskilpailu 2017 | R-1150 | pooli | A | 6-7 | Kinnunen Vili | TIP-70 |  |  | Westerlund Samuel | MBF |  |  | 6,4,6 | 1 | 1 | 60349
+2017-09-30 00:00:00 | Stiga-malja 2017 | 1200 | pooli | A | 1-3 | Kuronen Jiri | Stara |  |  | Kinnunen Vili | TIP-70 |  |  | -7,-13,11,-5 | 1 | 1 | 60874
+2017-09-30 00:00:00 | Stiga-malja 2017 | 1200 | pooli | A | 2-3 | Savolainen Jorma | LPTS |  |  | Kinnunen Vili | TIP-70 |  |  | 9,-6,-14,10,-3 | 1 | 1 | 60875
+2017-09-30 00:00:00 | Stiga-malja 2017 | 1200 JATKOKAAVIO | cup16 |  | 2 | Kinnunen Vili | TIP-70 |  |  | Tossavainen Miko | TIP-70 |  |  | 10,-9,-2,11,-4 | 2 | 1 | 60901
+2017-09-30 00:00:00 | Stiga-malja 2017 | 1200 JATKOKAAVIO | cup16 |  | 3 | Kinnunen Vili | TIP-70 |  |  | Kellow Ella | OPT-86 |  |  | 9,9,7 | 2 | 1 | 60897
+2017-09-30 00:00:00 | Stiga-malja 2017 | M15 | pooli | C | 1-4 | Randlaht Rose-Marii | Star |  |  | Kinnunen Vili | TIP-70 |  |  | 4,7,7 | 1 | 1 | 61221
+2017-09-30 00:00:00 | Stiga-malja 2017 | M15 | pooli | C | 2-4 | Laine Aleksi | Por-83 |  |  | Kinnunen Vili | TIP-70 |  |  | 6,3,7 | 1 | 1 | 61220
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | Juniori-rating (3) | pooli | D | 1-2 | Kinnunen Vili | TIP-70 |  |  | Tamašauskas Edvinas | Spinmaster |  |  | 9,-8,-11,-9 | 1 | 1 | 61827
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | Juniori-rating (3) | pooli | D | 1-3 | Kinnunen Vili | TIP-70 |  |  | Holmström Angelina | HIK |  |  | 6,5,2 | 1 | 1 | 61823
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | Juniori-rating (3) | pooli | D | 1-4 | Kinnunen Vili | TIP-70 |  |  | Ryynänen Jeremias | PT Espoo |  |  | 7,4,6 | 1 | 1 | 61825
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | Juniori-rating (3) Sijat 5-8 | cup4 |  | 1 | Kinnunen Vili | TIP-70 |  |  | Ylinen Matias | PT Espoo |  |  | 10,7,0 | 4 | 1 | 61835
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | Juniori-rating (3) Sijat 5-8 | cup4 |  | 2 | Marttinen Nuno | Maraton |  |  | Kinnunen Vili | TIP-70 |  |  | -11,-3,-4 | 4 | 1 | 61833
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | M-1000 | cup8 |  | 3 | Kinnunen Vili | TIP-70 |  |  | Sellberg Lena | ToTe |  |  | 8,-7,-7,7,-8 | 2 | 1 | 61965
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | M-1000 | pooli | B | 1-2 | Kinnunen Vili | TIP-70 |  |  | Jokitulppo Raimo | LPTS |  |  | 7,4,-9,12 | 1 | 1 | 61953
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | M-1000 | pooli | B | 1-3 | Kinnunen Vili | TIP-70 |  |  | Lastovko Beata | Spinmaster |  |  | 5,-10,-7,-9 | 1 | 1 | 61949
+2017-10-08 00:00:00 | PT Espoon syyskilpailut, GP | M-1000 | pooli | B | 1-4 | Kinnunen Vili | TIP-70 |  |  | Holmström Angelina | HIK |  |  | -8,2,1,9 | 1 | 1 | 61951
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1100 | pooli | B | 1-2 | Jansson Lauri | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | 3,-5,7,8 | 1 | 1 | 63547
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1100 | pooli | B | 2-3 | Kinnunen Vili | TIP-70 |  |  | Kaskelevicius Simonas | PT Espoo |  |  | -9,7,7,3 | 1 | 1 | 63546
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1100 | pooli | JP2 | 1-3 | Kim Woobin | TIP-70 |  |  | Kinnunen Vili | TIP-70 |  |  | -11,-8,9,7,-11 | 2 | 1 | 63563
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1100 | pooli | JP2 | 2-3 | Ylinen Matias | PT Espoo |  |  | Kinnunen Vili | TIP-70 |  |  | 6,-15,10,7 | 2 | 1 | 63564
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1300 | pooli | E | 2-3 | Jansson Lauri | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | 11,8,10 | 1 | 1 | 63587
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1300 | pooli | JP1 | 1-3 | Ylinen Matias | PT Espoo |  |  | Kinnunen Vili | TIP-70 |  |  | 6,-5,-5,5,9 | 2 | 1 | 63591
+2017-11-11 00:00:00 | PTS-60 kansalliset kilpailut | M-1300 | pooli | JP1 | 2-3 | Eldishnawy Dish | MBF |  |  | Kinnunen Vili | TIP-70 |  |  | -4,-3,-8 | 2 | 1 | 63592
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | M15 | cup32 |  | 4 | Kylliö Joonas | TIP-70 |  |  | Kinnunen Vili | TIP-70 |  |  | 6,6,5 | 1 | 1 | 66894
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | M15 | pooli | E | 1-2 | Kujala Henri | OPT-86 |  |  | Kinnunen Vili | TIP-70 |  |  | 7,-8,9,3 | 0 | 1 | 66869
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | M15 | pooli | E | 2-3 | Kinnunen Vili | TIP-70 |  |  | Lähti Lauri | TuPy |  |  | 14,8,7 | 0 | 1 | 66868
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | M15 | pooli | E | 2-4 | Kinnunen Vili | TIP-70 |  |  | Westerlund Samuel | MBF |  |  | 11,-7,11,-3,2 | 0 | 1 | 66866
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | MN15 | pooli | A | 1-2 | Vesalainen Matias | KoKa | Vesalainen Rasmus | KoKa | Kinnunen Vili | TIP-70 | Kim Woobin | TIP-70 | 6,8,3 | 0 | 0 | 66822
+2018-03-25 00:00:00 | Junioreiden SM (13 ja 15v) | MN15 | pooli | A | 2-3 | Kinnunen Vili | TIP-70 | Kim Woobin | TIP-70 | Engberg Elim | MBF | Westerlund Samuel | MBF | -9,-6,-9 | 0 | 0 | 66821
+2018-04-14 00:00:00 | PT Espoon kev?tkisat | M-1300 | pooli | B | 1-2 | Morozova Anna | Star |  |  | Kinnunen Vili | TIP-70 |  |  | -6,-4,-9 | 0 | 1 | 66918
+2018-04-14 00:00:00 | PT Espoon kev?tkisat | M-1300 | pooli | B | 2-3 | Kinnunen Vili | TIP-70 |  |  | Konttinen Jari | PT Espoo |  |  | 9,11,5 | 0 | 1 | 66917
+2018-04-14 00:00:00 | PT Espoon kev?tkisat | M-1300 | pooli | B | 2-4 | Kinnunen Vili | TIP-70 |  |  | Grönlund Hannu | Atlas |  |  | 3,5,8 | 0 | 1 | 66915
+2018-04-15 00:00:00 | PT Espoon kev?tkisat | M-1200 | pooli | A | 1-2 | Kinnunen Vili | TIP-70 |  |  | Leppänen Leo | PT 75 |  |  | 6,4,9 | 0 | 1 | 67141
+2018-04-15 00:00:00 | PT Espoon kev?tkisat | M-1200 | pooli | A | 1-3 | Kinnunen Vili | TIP-70 |  |  | Peuranen Raimo | HäKi |  |  | 9,-8,4,9 | 0 | 1 | 67139
+2018-04-15 00:00:00 | PT Espoon kev?tkisat | M-1400 | pooli | G | 1-2 | Hakala Jussi | JPT |  |  | Kinnunen Vili | TIP-70 |  |  | 9,-13,-9,3,-9 | 0 | 1 | 67042
+2018-04-15 00:00:00 | PT Espoon kev?tkisat | M-1400 | pooli | G | 2-3 | Kinnunen Vili | TIP-70 |  |  | Salo Ilpo | HäKi |  |  | 4,7,6 | 0 | 1 | 67041
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1400 | cup32 |  | 3 | Kinnunen Vili | TIP-70 |  |  | Niskanen Pauliina | HäKi |  |  | 8,-10,-7,-11 | 1 | 1 | 67393
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1400 | cup32 |  | 4 | Kinnunen Vili | TIP-70 |  |  | Wallius Esa | PeTo |  |  | 5,7,9 | 1 | 1 | 67394
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1400 | pooli | A | 1-2 | Kinnunen Vili | TIP-70 |  |  | Jokiranta Kari | SeSi |  |  | 7,9,-7,3 | 0 | 1 | 67318
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1400 | pooli | A | 1-3 | Kinnunen Vili | TIP-70 |  |  | Kerttula Yrjö | PT 75 |  |  | 5,7,-10,3 | 0 | 1 | 67316
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | cup32 |  | 3 | Kinnunen Vili | TIP-70 |  |  | Miranda Laiho Juhani | TuKa |  |  | -8,-9,11,7,-9 | 1 | 1 | 67492
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | cup32 |  | 4 | Wagner Sauli | UU |  |  | Kinnunen Vili | TIP-70 |  |  | -8,10,10,-8,-6 | 1 | 1 | 67493
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | cup32 |  | 5 | Kinnunen Vili | TIP-70 |  |  | Jukkala Juha-Pekka | PT Jyväskylä |  |  | -9,10,6,-7,9 | 1 | 1 | 67494
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | pooli | B | 1-2 | Kelmendi Mergim | TuPy |  |  | Kinnunen Vili | TIP-70 |  |  | 6,5,4 | 0 | 1 | 67428
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | pooli | B | 2-3 | Kinnunen Vili | TIP-70 |  |  | Sellberg Lena | ToTe |  |  | 10,-8,4,-6,8 | 0 | 1 | 67427
+2018-05-12 00:00:00 | PT 75 kansalliset ja AY-kisat | M-1600 | pooli | B | 2-4 | Kinnunen Vili | TIP-70 |  |  | Asunmaa Kai | PeTo |  |  | 8,4,4 | 0 | 1 | 67425
