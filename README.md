@@ -23,7 +23,13 @@ By **OttoSFelix**
 poetry install
 ```
 
-2. Sovelluksen saa käyntiin komennolla:
+2. Ennen käynnistämistä valmistele tietokanta komennolla:
+```bash
+poetry run invoke init
+```
+*tähän menee muutama minuutti*
+
+3. Sovelluksen saa käyntiin komennolla:
 komennolla:
 
 ```bash

@@ -1,4 +1,4 @@
-from search import get_player_base_stats, top_10_base_stats, get_h2h_record
+from search import get_player_base_stats, top_10_base_stats, get_h2h_record, get_players
 
 def base_stats():
     print('Player name (format= Surname Firstname): ', end="")

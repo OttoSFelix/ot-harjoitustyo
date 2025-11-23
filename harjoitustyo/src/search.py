@@ -11,7 +11,6 @@ def initialize_matches_table():
     cursor.execute('DROP TABLE IF EXISTS All_matches')
     cursor.execute('CREATE TABLE All_matches(date text, match_type text, division text, player_name text, player_club text, opponent_name text, opponent_club text, score text, total text, outcome text)')
     connection.commit()
-    print('init tehty')
 
 
 def top_date():
@@ -41,7 +40,6 @@ def get_newest_rating():
     date.reverse()
     seperator = '-'
     date = seperator.join(date)
-    print(date)
 
     url = f"https://www.sptl.fi/sptl_uudet/wp-content/plugins/sptl-plugin/ratingjulkaisut.php?pvm={date}"
 
@@ -136,89 +134,6 @@ def get_players():
         players.append(Player(row[0], row[1].strip(), row[2], row[3], row[4]))
     return players
 
-def get_player_matches_test(id, name):
-    url = "https://www.sptl.fi/sptl_uudet/wp-content/plugins/sptl-plugin/httpreq/lataa_csv.php"
-
-    seasons = ['2526', '2425', '2324', '2223', '2122', '2021', '1920', '1819', '1718', '1617', '1516', '1415', '1314', '1213', '1112']
-
-
-    for season in seasons:
-        print(season)
-        data = {
-            "alkupvm": "17.08.2000",   
-            "loppupvm": "25.10.2100",  
-            "kausi": season,           
-            "sarjaottelut": "1",
-            "kilpailut": "1",
-            "seura": "PT Espoo",
-            "tunnus": id,     
-            "kilpailu": ""
-        }
-        sleep(1)
-        r = requests.post(url, data=data)
-        r.raise_for_status()
-        with open('player.txt', 'wb') as file:
-            file.write(r.content)
-        
-        matches = []
-        with open('player.txt') as file:
-            for row in file:
-                matches.append(row.strip())
-        
-        if len(matches) == 0:
-            continue
-        matches.pop(0)
-
-
-        for row in matches:
-            row = row.split('|')
-            lista = []
-            print(row)
-            if len(row) > 5 and row[8] == '  ':
-                date = row[0].strip()
-                if '00:00:00' in date:
-                    date = date.removesuffix(' 00:00:00')
-                match_type = row[1].strip()
-                division = row[2].strip()
-                lista.append(row[6].strip())
-                print(lista)
-
-                if 'wo' in row[6].strip() or 'wo' in row[10].strip():
-                    continue
-                
-                if row[6].strip() == name:
-                    score = row[14].strip()
-                    if 'wo' in score or 'rtd' in score:
-                        continue
-                    player_name = row[6].strip()
-                    player_club = row[7].strip()
-                    opponent_name = row[10].strip()
-                    opponent_club = row[11].strip()
-                    total, outcome = total_score(score)
-
-                elif row[10].strip() == name:
-                    score = row[14].strip()
-                    if 'wo' in score or 'rtd' in score:
-                        continue
-                    player_name = row[10].strip()
-                    player_club = row[11].strip()
-                    opponent_name = row[6].strip()
-                    opponent_club = row[7].strip()
-                    score = reverse_score(score)
-                    total, outcome = total_score(score)
-                
-                
-                else:
-                    print('virhe playername osiossa')
-                
-                connection = get_database_connection()
-                cursor = connection.cursor()
-                cursor.execute('INSERT INTO Testmatches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
-            else:
-                print('virhe')
-                continue
-        connection.commit()
-        
 
 def get_player_matches(player: Player, connection, session):
     cursor = connection.cursor()
@@ -235,7 +150,6 @@ def get_player_matches(player: Player, connection, session):
             "tunnus": player.id,     
             "kilpailu": ""
         }
-        sleep(1)
         try:
             r = session.post(url, data=data, timeout=10)
         except requests.exceptions.Timeout:
@@ -250,7 +164,6 @@ def get_player_matches(player: Player, connection, session):
         
         if len(matches) <= 1:
                 continue
-
 
         for row in matches:
             row = row.split('|')
@@ -275,7 +188,7 @@ def get_player_matches(player: Player, connection, session):
                     total, outcome = total_score(score)
                     if total == 'fail':
                         print('parsing error')
-                    continue
+                        continue
 
                 elif row[10].strip() == player.name:
                     score = row[14].strip()
@@ -292,10 +205,11 @@ def get_player_matches(player: Player, connection, session):
                     total, outcome = total_score(score)
                     if total == 'fail':
                         print('parsing error')
-                    continue
+                        continue
                 else:
                     print('virhe playername osiossa')
-                cursor.execute('INSERT INTO Matches2(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
+                    continue
+                cursor.execute('INSERT INTO All_matches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
             else:
                 continue
     connection.commit()
@@ -364,17 +278,3 @@ def get_h2h_record(player1, player2):
     return(f'{player1} and {player2} have played {len(rows)} times and {player1} has won {player1_wins} of them and {player2} {player2_wins}')
 
 
-
-# session = requests.Session()
-# connection = get_database_connection()
-
-# x = 973
-# players = get_players()
-# players = players[973:]
-# for player in players:
-#     get_player_matches(player, connection, session)
-#     x += 1
-#     print(x)
-
-# connection.close()
-# session.close()
