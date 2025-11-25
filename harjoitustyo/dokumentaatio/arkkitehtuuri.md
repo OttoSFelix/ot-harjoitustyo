@@ -7,7 +7,7 @@ Alla näkyy luokan toiminta muiden funktioiden kanssa:
 
 ```mermaid
  classDiagram
-      Player "*" --> "" get_players()
+      Player "*" -->  get_players
       class Player{
           rank
           name
