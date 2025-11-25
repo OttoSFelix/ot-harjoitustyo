@@ -15,11 +15,11 @@ Alla näkyy luokan toiminta muiden funktioiden kanssa:
 	  club
 	  rating
       }
-      get_players() --> get_player_matches()
+      get_players --> get_player_matches
       get_player_matches --> rating_database.db
-      rating_database.db -- get_h2h_record()
-      rating_database.db -- get_player_base_stats()
-      rating database.db -- top_10_base_stats()
+      rating_database.db -- get_h2h_record
+      rating_database.db -- get_player_base_stats
+      rating database.db -- top_10_base_stats
 ```
 ## Käyttöliittymä
 
