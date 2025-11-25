@@ -12,3 +12,10 @@
 - Pelaajien perustatistiikkoja hakevat funktiot rakennettu
 - Tekstikäyttöliittymä toimii
 - Vaaditut invoke komennot toimii
+
+#Viikko 4
+- Ratkaistu liian ison tietokannan ongelma
+- Tietokanta on nyt pienempi ja pitää valmistella ennen sovelluksen käyttöä
+- Pylint testaus toimii ja antaa 9/10
+- Invoke lint toimii
+
