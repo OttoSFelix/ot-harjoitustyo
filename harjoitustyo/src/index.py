@@ -1,5 +1,5 @@
-from search import get_player_base_stats, top_10_base_stats, get_h2h_record, get_players
-
+import sys
+from search import get_player_base_stats, top_10_base_stats, get_h2h_record
 def base_stats():
     print('Player name (format= Surname Firstname): ', end="")
     name = input('')
@@ -10,7 +10,8 @@ def base_stats():
 
 
 def h2h():
-    print('Insert player name and opponent name: (format= Surname Firstname, Surname Firstname) ', end='')
+    print('Insert player name and opponent name: (format= Surname Firstname, Surname Firstname) ',
+           end='')
     names = input('')
     names = names.split(',')
     name1 = names[0].strip()
@@ -38,7 +39,7 @@ def starting_tui():
     elif operation.strip() == 'h2h':
         h2h()
     elif operation.strip() == 'q':
-        quit()
+        sys.exit()
     elif operation.strip() == 'top10':
         top10()
     else:
@@ -50,4 +51,3 @@ if __name__ == '__main__':
     print("Player Statistics App Version 1.0.0")
     print('----------------------------------')
     starting_tui()
-

@@ -9,7 +9,16 @@ def initialize_matches_table():
     connection = get_database_connection()
     cursor = connection.cursor()
     cursor.execute('DROP TABLE IF EXISTS All_matches')
-    cursor.execute('CREATE TABLE All_matches(date text, match_type text, division text, player_name text, player_club text, opponent_name text, opponent_club text, score text, total text, outcome text)')
+    cursor.execute("""CREATE TABLE All_matches
+                   (date text, 
+                   match_type text, 
+                   division text, 
+                   player_name text, 
+                   player_club text, 
+                   opponent_name text, 
+                   opponent_club text, 
+                   score text, total text, 
+                   outcome text)""")
     connection.commit()
 
 
@@ -19,10 +28,10 @@ def top_date():
 
     try:
         response = requests.get(url)
-        response.raise_for_status() 
+        response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         selector = ".entry-content tr:nth-child(2) td a"
-        
+
         date_element = soup.select_one(selector)
 
         if date_element:
@@ -40,13 +49,12 @@ def get_newest_rating():
     date.reverse()
     seperator = '-'
     date = seperator.join(date)
-
-    url = f"https://www.sptl.fi/sptl_uudet/wp-content/plugins/sptl-plugin/ratingjulkaisut.php?pvm={date}"
+    main = 'https://www.sptl.fi'
+    url = f"{main}/sptl_uudet/wp-content/plugins/sptl-plugin/ratingjulkaisut.php?pvm={date}"
 
     payload = {
         "csv": "csv"
     }
-    
 
     print(f"Submitting form to {url}...")
 
@@ -80,7 +88,9 @@ def get_newest_rating():
         if not name or not club:
             continue
         # tee mahdolliset pelaaja luokat
-        cursor.execute('INSERT INTO Ratinglist(rank, name, id, club, rating) values(?, ?, ?, ?, ?)', (rank, name, id, club, rating))
+        cursor.execute("""INSERT INTO Ratinglist(rank, name, id, club, rating)
+                       values(?, ?, ?, ?, ?)""",
+                       (rank, name, id, club, rating))
         connection.commit()
 
 
@@ -102,10 +112,9 @@ def total_score(score):
             outcome = 'win'
         else:
             outcome = 'lose'
-        return(f'{player}-{opponent}', outcome)
+        return (f'{player}-{opponent}', outcome)
     except:
         return ('fail', 'fail')
-    
 
 
 
@@ -138,16 +147,30 @@ def get_players():
 def get_player_matches(player: Player, connection, session):
     cursor = connection.cursor()
     url = "https://www.sptl.fi/sptl_uudet/wp-content/plugins/sptl-plugin/httpreq/lataa_csv.php"
-    seasons = ['2526', '2425', '2324', '2223', '2122', '2021', '1920', '1819', '1718', '1617', '1516', '1415', '1314', '1213', '1112']
+    seasons = ['2526',
+               '2425',
+               '2324',
+               '2223',
+               '2122',
+               '2021',
+               '1920',
+               '1819',
+               '1718',
+               '1617',
+               '1516',
+               '1415',
+               '1314',
+               '1213',
+               '1112']
     for season in seasons:
         data = {
-            "alkupvm": "17.08.2000",   
-            "loppupvm": "25.10.2100",  
-            "kausi": season,           
+            "alkupvm": "17.08.2000",
+            "loppupvm": "25.10.2100",
+            "kausi": season,
             "sarjaottelut": "1",
             "kilpailut": "1",
            "seura": player.club,
-            "tunnus": player.id,     
+            "tunnus": player.id,
             "kilpailu": ""
         }
         try:
@@ -161,7 +184,7 @@ def get_player_matches(player: Player, connection, session):
         r.raise_for_status()
         content = r.text.strip()
         matches = content.splitlines()
-        
+
         if len(matches) <= 1:
                 continue
 
@@ -173,7 +196,7 @@ def get_player_matches(player: Player, connection, session):
                     date = date.removesuffix(' 00:00:00')
                 match_type = row[1].strip()
                 division = row[2].strip()
-                
+
                 if 'wo' in row[6].strip() or 'wo' in row[10].strip():
                     continue
 
@@ -209,11 +232,14 @@ def get_player_matches(player: Player, connection, session):
                 else:
                     print('virhe playername osiossa')
                     continue
-                cursor.execute('INSERT INTO All_matches(date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome))
+                cursor.execute("""INSERT INTO All_matches
+                               (date, match_type, division, player_name, player_club, opponent_name, opponent_club, score, total, outcome)
+                                values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                                (date, match_type, division, player_name, player_club,
+                                 opponent_name, opponent_club, score, total, outcome))
             else:
                 continue
     connection.commit()
-        
 
 
 def get_player_base_stats(name):
@@ -223,13 +249,13 @@ def get_player_base_stats(name):
     cursor.execute('SELECT * FROM Ratinglist WHERE name == ?', (name,))
     row = cursor.fetchall()
     if not row:
-        return(f"Couldn't find player named {name}")
+        return f"Couldn't find player named {name}"
     row = row[0]
     player = Player(row[0], row[1], row[2], row[3], row[4])
     cursor.execute('SELECT * FROM All_matches WHERE player_name == ?', (name,))
     rows = cursor.fetchall()
     if not rows:
-        return(f"Couldn't find matches for {name}")
+        return f"Couldn't find matches for {name}"
     wins = 0
     losses = 0
     for row in rows:
@@ -242,7 +268,10 @@ def get_player_base_stats(name):
             return
     winrate = (wins / (wins + losses)) * 100
     winrate = str(round(winrate, 2))
-    return f'{str(player)} , all time wins: {wins}, all time losses: {losses} --  All time win rate: {winrate}% '
+    return f"""{str(player)}
+    all time wins: {wins}
+    all time losses: {losses}
+    All time win rate: {winrate}% """
 
 
 def top_10_base_stats(rank):
@@ -262,10 +291,12 @@ def top_10_base_stats(rank):
 def get_h2h_record(player1, player2):
     connection = get_database_connection()
     cursor = connection.cursor()
-    cursor.execute('SELECT * FROM All_matches WHERE player_name == ? AND opponent_name == ?', (player1, player2))
+    cursor.execute("""SELECT * FROM All_matches WHERE player_name == ?
+                   AND opponent_name == ?""",
+                   (player1, player2))
     rows = cursor.fetchall()
     if len(rows) == 0:
-        return(f'{player1} and {player2} have played {len(rows)} times')
+        return f'{player1} and {player2} have played {len(rows)} times'
     player1_wins = 0
     player2_wins = 0
     for row in rows:
@@ -274,7 +305,5 @@ def get_h2h_record(player1, player2):
         elif row[9] == 'lose':
             player2_wins += 1
         else:
-            return('Error calculating wins')
-    return(f'{player1} and {player2} have played {len(rows)} times and {player1} has won {player1_wins} of them and {player2} {player2_wins}')
-
-
+            return 'Error calculating wins'
+    return f'{player1} and {player2} have played {len(rows)} times and {player1} has won {player1_wins} of them and {player2} {player2_wins}'
