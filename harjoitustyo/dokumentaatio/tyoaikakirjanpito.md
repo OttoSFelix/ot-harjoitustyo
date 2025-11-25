@@ -9,3 +9,4 @@
 | 21.11 | 4    | Kahden pelaajan välisen ottelusuhteen laskeminen toimii nyt ja lisätty top10 statistiikka ominaisuus |
 | 23.11 | 4    | Uudelleen suunniteltu tietokannan toimivuus. Nyt tietokanta on pienempi ja pitää alustella ennen sovelluksen käyttöä |
 | 25.11 | 2    | Koodin laatutarkastelu pylintillä toimii ja korjattu pylintin osoittamia laatuvirheitä. Invoke lint toimii myös |
+| yht   | 23   |
