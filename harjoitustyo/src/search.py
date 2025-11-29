@@ -94,6 +94,7 @@ def get_newest_rating():
         connection.commit()
 
 
+
 def total_score(score):
     score = score.split(',')
     try:
@@ -273,7 +274,7 @@ def get_player_base_stats(name):
     All time win rate: {winrate}% """
 
 
-def top_10_base_stats(rank):
+def top_10_base_stats():
     connection = get_database_connection()
     cursor = connection.cursor()
     cursor.execute('SELECT * FROM Ratinglist WHERE rank <= 10')

@@ -23,7 +23,7 @@ def h2h():
 
 
 def top10():
-    for stat in top_10_base_stats(10):
+    for stat in top_10_base_stats():
         print('------------------------------------------------------')
         print(stat)
         print('------------------------------------------------------')
