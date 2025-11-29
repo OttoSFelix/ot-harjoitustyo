@@ -5,7 +5,7 @@ get_newest_rating()
 initialize_matches_table()
 session = requests.Session()
 connection = get_database_connection()
-players = get_players()[:100]
+players = get_players()[:10]
 for player in players:
     get_player_matches(player, connection, session)
     print(f'\rInitializing database {player.rank}% done', end='', flush=True)

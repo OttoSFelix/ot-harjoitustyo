@@ -15,6 +15,7 @@ def coverage_report(ctx):
 
 @task
 def init(ctx):
+    ctx.run('touch data/rating_database.db', pty=True)
     ctx.run('python3 src/initialize.py', pty=True)
 
 @task
