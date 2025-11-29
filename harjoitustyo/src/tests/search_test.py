@@ -1,4 +1,5 @@
 import unittest
+import os
 from playerinfo import Player
 import requests
 from database_connection import get_database_connection
@@ -68,6 +69,9 @@ class TestSearch(unittest.TestCase):
                         rows.append(f.readline().strip())
         print(rows)
         self.assertEqual(rows[1], 'Rating-julkaisu 23.11.2025')
+        if os.path.exists("ratinglist"):
+            os.remove("ratinglist")
+
 
     def test_get_player_matches(self):
         cursor = self.connection.cursor()
