@@ -5,3 +5,4 @@ htmlcov
 .DS_Store
 .coverage
 htmlcov
+rating_database.db

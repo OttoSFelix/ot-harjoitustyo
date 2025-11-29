@@ -1,8 +1,8 @@
+from time import sleep
 import requests
 from bs4 import BeautifulSoup
 from database_connection import get_database_connection
 from playerinfo import Player
-from time import sleep
 
 
 def initialize_matches_table():
@@ -97,10 +97,10 @@ def get_newest_rating():
 def total_score(score):
     score = score.split(',')
     try:
-        for s in range(len(score)):
-            if score[s] == '':
-                score[s] = 0
-            score[s] = int(score[s])
+        for n, s in enumerate(score):
+            if s == '':
+                score[n] = 0
+            score[n] = int(score[n])
         player = 0
         opponent = 0
         for s in score:
@@ -121,13 +121,13 @@ def total_score(score):
 def reverse_score(score):
     try:
         score = score.split(',')
-        for s in range(len(score)):
-            if score[s] == '':
-                score[s] = 0
-            score[s] = int(score[s])
-            score[s] = -score[s]
-        for s in range(len(score)):
-            score[s] = str(score[s])
+        for n, s in enumerate(score):
+            if s == '':
+                score[n] = 0
+            score[n] = int(score[n])
+            score[n] = -score[n]
+        for n, s in enumerate(score):
+            score[n] = str(s)
         return ','.join(score)
     except:
         return 'fail'
@@ -264,8 +264,7 @@ def get_player_base_stats(name):
         elif row[9] == 'lose':
             losses += 1
         else:
-            print(f'{row} error while parsing outcome')
-            return
+            return f'{row} error while parsing outcome'
     winrate = (wins / (wins + losses)) * 100
     winrate = str(round(winrate, 2))
     return f"""{str(player)}
