@@ -35,7 +35,7 @@ komennolla:
 poetry run invoke start
 ```
 
-- Jos sovellus ei tunnista rating_database.db tiedostoa tietokannaksi, runaa ensin ```git lfs checkout```
+Tämä avaa ikkunan (kotinäyttöön) jossa pyörii sovelluksen graafinen käyttöliittymä
 
 ## Muut komentorivitoiminnot
 
