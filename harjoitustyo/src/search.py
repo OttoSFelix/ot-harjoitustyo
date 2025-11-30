@@ -144,6 +144,15 @@ def get_players():
         players.append(Player(row[0], row[1].strip(), row[2], row[3], row[4]))
     return players
 
+def get_nth_players(rank):
+    players = []
+    connection = get_database_connection()
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM Ratinglist WHERE rank <= ?', (rank,))
+    rows = cursor.fetchall()
+    for row in rows:
+        players.append(Player(row[0], row[1].strip(), row[2], row[3], row[4]))
+    return players
 
 def get_player_matches(player: Player, connection, session):
     cursor = connection.cursor()

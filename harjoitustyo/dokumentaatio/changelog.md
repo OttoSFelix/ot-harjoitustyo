@@ -19,3 +19,9 @@
 - Pylint testaus toimii ja antaa 9/10
 - Invoke lint toimii
 
+#Viikko 5
+- Pylint koodinlaatutarkistuksia korjattu eli koodista on tehty laadukkaampaa
+- Testejä on lisätty paljon. Testikattavuut on nyt korkeampi
+- Graafinen käyttöliittymä aloitettu
+- Graafinen käyttöliittymä toimii kolmella näkymällä
+

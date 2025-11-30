@@ -23,13 +23,11 @@ Alla näkyy luokan toiminta muiden funktioiden kanssa:
 ```
 ## Käyttöliittymä
 
-Sovelluksessa kaikki ovat normaaleja käyttäjiä ja tällä hetkellä on vain yksi näkymä; alkunäkymä, joka toimii tiedostossa index.py
-Alkunäkymässä on toiminnot:
-- `basestats`
-- `h2h`
-- `top10`
+Sovelluksessa kaikki ovat normaaleja käyttäjiä ja tällä hetkellä on kolme näkymää; kotinäkymä, ratinglista ja head to head calculator
+Kotinäkymässä on napit:
+- `Ratinglist`
+- `Head to head calculator`
 
-Basestats käyttää search.py:n funktiota get_player_basestats(name) ja palauttaa pelaajan perustatistiikat alkunäkymään. h2h käyttää search.py:n funktiota get_h2h_record(player1, player2) ja palauttaa kahden pelaajan välisen ottelusuhteen alkunäkymään
-top10 iteroi funktiota get_player_basestats(name).
+Ratinglist käyttää search.py:n funktiota get_player_basestats(name) ja palauttaa jokaisen top 100 pelaajan perustatistiikat alkunäkymään. Head to head calculator käyttää search.py:n funktiota get_h2h_record(player1, player2) ja palauttaa kahden pelaajan välisen ottelusuhteen näkymään
 
  

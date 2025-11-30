@@ -1,0 +1,82 @@
+import tkinter as tk
+from tkinter import ttk, constants
+from search import get_nth_players, get_player_base_stats
+
+class RatingView:
+    def __init__(self, root, change_to_home):
+        self._root = root
+        self._change_to_home = change_to_home
+        self._frame = None
+        self._scrollable_frame = None
+        self._search_entry = None     
+
+        self._initialize()
+
+    def pack(self):
+        self._frame.pack(fill=constants.BOTH, expand=True)
+
+    def destroy(self):
+        self._frame.destroy()
+
+    def _handle_search(self):
+        name = self._search_entry.get().strip()
+        
+        if not name:
+            self._handle_show_all()
+            return
+        stats_text = get_player_base_stats(name)
+        self._update_scroll_view([stats_text])
+
+    def _handle_show_all(self):
+        players = get_nth_players(100)
+        stats_list = [get_player_base_stats(p.name) for p in players]
+        self._update_scroll_view(stats_list)
+
+    def _update_scroll_view(self, data_list):
+        for widget in self._scrollable_frame.winfo_children():
+            widget.destroy()
+
+        for text_content in data_list:
+            card = ttk.Frame(self._scrollable_frame, relief="groove", borderwidth=1)
+            card.pack(fill=constants.X, padx=5, pady=2)
+            
+            lbl = ttk.Label(master=card, text=text_content)
+            lbl.pack(padx=5, pady=5, anchor="w")
+
+    def _initialize(self):
+        self._frame = ttk.Frame(master=self._root)
+        header_frame = ttk.Frame(self._frame)
+        header_frame.pack(fill=constants.X, padx=10, pady=10)
+
+        title_lbl = ttk.Label(header_frame, text="Ratinglist", font=("Arial", 14, "bold"))
+        title_lbl.pack(side=constants.LEFT)
+
+        controls_frame = ttk.Frame(header_frame)
+        controls_frame.pack(side=constants.RIGHT)
+        self._search_entry = ttk.Entry(controls_frame, width=20)
+        self._search_entry.pack(side=constants.LEFT, padx=5)
+
+        search_btn = ttk.Button(controls_frame, text="Search", command=self._handle_search)
+        search_btn.pack(side=constants.LEFT, padx=5)
+
+        reset_btn = ttk.Button(controls_frame, text="Show All", command=self._handle_show_all)
+        reset_btn.pack(side=constants.LEFT, padx=5)
+
+        home_btn = ttk.Button(controls_frame, text="Home", command=self._change_to_home)
+        home_btn.pack(side=constants.LEFT, padx=5)
+
+        canvas = tk.Canvas(self._frame)
+        scrollbar = ttk.Scrollbar(self._frame, orient="vertical", command=canvas.yview)
+        self._scrollable_frame = ttk.Frame(canvas)
+
+        self._scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+
+        canvas.create_window((0, 0), window=self._scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        canvas.pack(side=constants.LEFT, fill=constants.BOTH, expand=True)
+        scrollbar.pack(side=constants.RIGHT, fill=constants.Y)
+        self._handle_show_all()
