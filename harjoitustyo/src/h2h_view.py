@@ -57,11 +57,11 @@ class H2HView:
         search_btn.grid(row=2, column=0, columnspan=2, pady=15)
 
         self._result_label = ttk.Label(
-            self._frame, 
-            text="", 
+            self._frame,
+            text="",
             font=("Arial", 12),
             anchor="center",
             justify="center",
-            wraplength=500 
+            wraplength=500
         )
         self._result_label.pack(pady=10, padx=20)

@@ -14,11 +14,9 @@ class HomeView:
 
     def destroy(self):
         self._frame.destroy()
-    
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
         label = ttk.Label(master=self._frame, text="Home View")
-        
         button = ttk.Button(
             master=self._frame,
             text="Ratinglist",

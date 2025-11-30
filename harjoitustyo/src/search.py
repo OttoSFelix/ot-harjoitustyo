@@ -1,4 +1,3 @@
-from time import sleep
 import requests
 from bs4 import BeautifulSoup
 from database_connection import get_database_connection

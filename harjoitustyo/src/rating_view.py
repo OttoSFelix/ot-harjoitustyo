@@ -8,7 +8,7 @@ class RatingView:
         self._change_to_home = change_to_home
         self._frame = None
         self._scrollable_frame = None
-        self._search_entry = None     
+        self._search_entry = None
 
         self._initialize()
 
@@ -20,7 +20,6 @@ class RatingView:
 
     def _handle_search(self):
         name = self._search_entry.get().strip()
-        
         if not name:
             self._handle_show_all()
             return
@@ -39,7 +38,6 @@ class RatingView:
         for text_content in data_list:
             card = ttk.Frame(self._scrollable_frame, relief="groove", borderwidth=1)
             card.pack(fill=constants.X, padx=5, pady=2)
-            
             lbl = ttk.Label(master=card, text=text_content)
             lbl.pack(padx=5, pady=5, anchor="w")
 
