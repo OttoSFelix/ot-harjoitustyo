@@ -31,3 +31,18 @@ Kotinäkymässä on napit:
 Ratinglist käyttää search.py:n funktiota get_player_basestats(name) ja palauttaa jokaisen top 100 pelaajan perustatistiikat alkunäkymään. Head to head calculator käyttää search.py:n funktiota get_h2h_record(player1, player2) ja palauttaa kahden pelaajan välisen ottelusuhteen näkymään
 
  
+Head to head recordin näyttäminen käyttäjälle on kuvattu seuraavassa sekvenssikaaviossa:
+
+```mermaid
+sequenceDiagram
+  actor User
+  participant UI
+  participant search.py
+  participant rating_database.db
+  User->>UI: click "Head to head calculator" button
+  UI->>search.py: get_h2h_record("Räsänen Aleksi", "Pihkala Arttu")
+  search.py->>rating_database.db: SELECT * FROM All_matches WHERE player_name == 'Räsänen Aleksi' AND opponent_name == 'Pihkala Arttu';
+  rating_database.db-->>get_h2h_record: matches
+  search.py-->>UI: head to head record
+  UI->UI: display head to head record
+```
