@@ -42,7 +42,7 @@ sequenceDiagram
   User->>UI: click "Head to head calculator" button
   UI->>search.py: get_h2h_record("Räsänen Aleksi", "Pihkala Arttu")
   search.py->>rating_database.db: SELECT * FROM All_matches WHERE player_name == 'Räsänen Aleksi' AND opponent_name == 'Pihkala Arttu';
-  rating_database.db-->>get_h2h_record: matches
+  rating_database.db-->>search.py: matches
   search.py-->>UI: head to head record
   UI->UI: display head to head record
 ```
