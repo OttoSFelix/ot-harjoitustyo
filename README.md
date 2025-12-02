@@ -5,7 +5,7 @@ By **OttoSFelix**
 # Player Statistics app
 Applikaatiolla pystyy tällä hetkellä hakemaan top 100 pelaajien perustatistiikkoja ja pelaajien välisiä ottelusuhteita
 
-[Versio 1.0 release](https://github.com/OttoSFelix/ot-harjoitustyo/releases/tag/Versio1.0)
+[Viikko 5 release](https://github.com/OttoSFelix/ot-harjoitustyo/releases/tag/Viikon_5_deadline)
  
 ## Dokumentaatio
 
