@@ -315,3 +315,5 @@ def get_h2h_record(player1, player2):
         else:
             return 'Error calculating wins'
     return f'{player1} and {player2} have played {len(rows)} times and {player1} has won {player1_wins} of them and {player2} {player2_wins}'
+
+
