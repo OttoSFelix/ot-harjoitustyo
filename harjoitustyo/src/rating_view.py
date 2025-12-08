@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, constants
-from search import get_nth_players, get_player_base_stats
+from search import get_nth_players, get_player_base_stats, get_newest_rating
 
 class RatingView:
     def __init__(self, root, change_to_home):
@@ -9,6 +9,8 @@ class RatingView:
         self._frame = None
         self._scrollable_frame = None
         self._search_entry = None
+        self._style = ttk.Style()
+        self._style.configure("Green.TCheckbutton", foreground="green")
 
         self._initialize()
 
@@ -41,6 +43,14 @@ class RatingView:
             lbl = ttk.Label(master=card, text=text_content)
             lbl.pack(padx=5, pady=5, anchor="w")
 
+    def _update_rating(self):
+        get_newest_rating()
+        players = get_nth_players(100)
+        stats_list = [get_player_base_stats(p.name) for p in players]
+        self._update_scroll_view(stats_list)
+        self._update_status.config(text='Updated to newest rating', font=('Arial', 14), style='Green.TCheckbutton')
+
+
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
         header_frame = ttk.Frame(self._frame)
@@ -62,6 +72,11 @@ class RatingView:
 
         home_btn = ttk.Button(controls_frame, text="Home", command=self._change_to_home)
         home_btn.pack(side=constants.LEFT, padx=5)
+
+        update_btn = ttk.Button(controls_frame, text='Update to newest rating', command=self._update_rating)
+        update_btn.pack(side=constants.LEFT, padx=5)
+        self._update_status = ttk.Label(header_frame)
+        self._update_status.pack(side=constants.LEFT, padx=5)
 
         canvas = tk.Canvas(self._frame)
         scrollbar = ttk.Scrollbar(self._frame, orient="vertical", command=canvas.yview)

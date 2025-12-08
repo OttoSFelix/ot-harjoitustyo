@@ -6,3 +6,4 @@ htmlcov
 .coverage
 htmlcov
 rating_database.db
+ratinglist
