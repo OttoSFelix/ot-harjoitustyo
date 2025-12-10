@@ -3,7 +3,8 @@ from tkinter import ttk, constants
 from search import get_h2h_record
 
 class H2HView:
-    def __init__(self, root, change_to_home):
+    def __init__(self, root, change_to_home, cursor):
+        self._cursor = cursor
         self._root = root
         self._change_to_home = change_to_home
         self._frame = None
@@ -27,7 +28,7 @@ class H2HView:
             self._result_label.config(text="Please enter both player names", foreground="red")
             return
 
-        result_text = get_h2h_record(p1_name, p2_name)
+        result_text = get_h2h_record(p1_name, p2_name, self._cursor)
         self._result_label.config(text=result_text, foreground="")
 
     def _initialize(self):

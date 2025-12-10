@@ -1,9 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, constants
-from search import get_nth_players, get_player_base_stats, get_newest_rating
+from search import get_nth_players, get_player_base_stats, get_newest_rating, get_seasonal_stats, get_name
 
 class RatingView:
-    def __init__(self, root, change_to_home):
+    def __init__(self, root, change_to_home, cursor, connection):
+        self._cursor = cursor
+        self._connection = connection
         self._root = root
         self._change_to_home = change_to_home
         self._frame = None
@@ -22,15 +24,25 @@ class RatingView:
 
     def _handle_search(self):
         name = self._search_entry.get().strip()
+        name = get_name(name, self._cursor)
         if not name:
             self._handle_show_all()
             return
-        stats_text = get_player_base_stats(name)
-        self._update_scroll_view([stats_text])
+        seasonal_matches = get_seasonal_stats(name, self._cursor)
+        stats_text = get_player_base_stats(name, self._cursor)
+        text = [stats_text]
+        for season, stats in seasonal_matches.items():
+            text.append(f"""{season}
+            Matches played: {stats[0]}
+            Wins: {stats[1]}
+            Losses: {stats[2]}
+            Winrate: {stats[3]}
+""")
+        self._update_scroll_view(text)
 
     def _handle_show_all(self):
-        players = get_nth_players(100)
-        stats_list = [get_player_base_stats(p.name) for p in players]
+        players = get_nth_players(100, self._cursor)
+        stats_list = [get_player_base_stats(p.name, self._cursor) for p in players]
         self._update_scroll_view(stats_list)
 
     def _update_scroll_view(self, data_list):
@@ -44,9 +56,10 @@ class RatingView:
             lbl.pack(padx=5, pady=5, anchor="w")
 
     def _update_rating(self):
-        get_newest_rating()
-        players = get_nth_players(100)
-        stats_list = [get_player_base_stats(p.name) for p in players]
+        get_newest_rating(self._cursor)
+        self._connection.commit()
+        players = get_nth_players(100, self._cursor)
+        stats_list = [get_player_base_stats(p.name, self._cursor) for p in players]
         self._update_scroll_view(stats_list)
         self._update_status.config(text='Updated to newest rating', font=('Arial', 14), style='Green.TCheckbutton')
 

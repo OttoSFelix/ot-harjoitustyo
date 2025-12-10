@@ -2,11 +2,14 @@ from tkinter import Tk
 from home_view import HomeView
 from rating_view import RatingView
 from h2h_view import H2HView
+from database_connection import get_database_connection
 
 class UI:
     def __init__(self, root):
         self._root = root
         self._current_view = None
+        self.connection = get_database_connection()
+        self.cursor = self.connection.cursor()
 
     def start(self):
         self._show_home_view()
@@ -39,7 +42,9 @@ class UI:
 
         self._current_view = RatingView(
             self._root,
-            self._change_to_home
+            self._change_to_home,
+            self.cursor,
+            self.connection
         )
 
         self._current_view.pack()
@@ -52,7 +57,8 @@ class UI:
 
         self._current_view = H2HView(
             self._root,
-            self._change_to_home
+            self._change_to_home,
+            self.cursor
         )
 
         self._current_view.pack()

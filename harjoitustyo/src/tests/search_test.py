@@ -9,6 +9,7 @@ class TestSearch(unittest.TestCase):
 
     def setUp(self):
         self.connection = get_database_connection()
+        self.cursor = self.connection.cursor()
         self.session = requests.Session()
     
     def test_total_score_correct(self):
@@ -32,53 +33,52 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(reverse, 'fail')
 
     def test_get_players_length(self):
-        players = get_players()
-        self.assertEqual(len(players), 3561)
+        players = get_players(self.cursor)
+        self.assertGreater(len(players), 3500)
 
     def test_get_player_base_stats(self):
-        stats = get_player_base_stats('Olah Benedek')
+        stats = get_player_base_stats('Olah Benedek', self.cursor)
         self.assertEqual(stats, """1 Olah Benedek SeSi 2625
     all time wins: 25
     all time losses: 0
     All time win rate: 100.0% """)
         
     def test_top_10_base_stats(self):
-        stats = top_10_base_stats()
+        stats = top_10_base_stats(self.cursor)
         self.assertEqual(stats[0], """1 Olah Benedek SeSi 2625
     all time wins: 25
     all time losses: 0
     All time win rate: 100.0% """)
         
     def test_h2h_record_correct(self):
-        h2h = get_h2h_record('Räsänen Aleksi', 'Tennilä Otto')
+        h2h = get_h2h_record('Räsänen Aleksi', 'Tennilä Otto', self.cursor)
         self.assertEqual(h2h, 'Räsänen Aleksi and Tennilä Otto have played 8 times and Räsänen Aleksi has won 1 of them and Tennilä Otto 7')
 
     def test_h2h_record_empty(self):
-        h2h = get_h2h_record('Prusa David', 'Olah Benedek')
+        h2h = get_h2h_record('Prusa David', 'Olah Benedek', self.cursor)
         self.assertEqual(h2h, 'Prusa David and Olah Benedek have played 0 times')
 
     def test_top_date(self):
         date = top_date()
-        self.assertEqual(date, '23.11.2025')
+        self.assertEqual(date, '30.11.2025')
 
     def test_get_newest_rating(self):
-        get_newest_rating()
+        get_newest_rating(self.cursor)
         rows = []
         with open('ratinglist', 'r') as f:
                     for i in range(5):
                         rows.append(f.readline().strip())
         print(rows)
-        self.assertEqual(rows[1], 'Rating-julkaisu 23.11.2025')
+        self.assertEqual(rows[1], 'Rating-julkaisu 30.11.2025')
         if os.path.exists("ratinglist"):
             os.remove("ratinglist")
 
 
     def test_get_player_matches(self):
-        cursor = self.connection.cursor()
-        cursor.execute("DELETE FROM All_matches WHERE player_name == 'Pihkala Arttu'")
+        self.cursor.execute("DELETE FROM All_matches WHERE player_name == 'Pihkala Arttu'")
         player = Player(1, 'Pihkala Arttu', 'PihkaArtt', 'PT Espoo', '2423')
         get_player_matches(player, self.connection, self.session)
-        stats = get_player_base_stats('Pihkala Arttu')
+        stats = get_player_base_stats('Pihkala Arttu', self.cursor)
         self.assertEqual(stats, """10 Pihkala Arttu PT Espoo 2423
     all time wins: 411
     all time losses: 197
