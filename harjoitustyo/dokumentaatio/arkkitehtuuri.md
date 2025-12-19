@@ -125,9 +125,9 @@ web_search.py tekee pyyntöjä match_algoritms.py:lle jäsentääkseen matsien t
 Näiden kolmen tiedoston toiminta on kuvattu alla:
 
 ```mermaid
-erDiagram
-   db_search -- (database)
-   web_search --{ (database)
+flowchart TD
+   db_search -- reads -- [(database)]
+   web_search -- inserts --> [(database)]
    web_search -- match_algoritms
 ```
   
