@@ -7,5 +7,5 @@ Tämän projektin on tarkoitus olla ohjelma, jonka avulla voi kerätä ja analys
 - Nähdä yksittäisten pelaajien voittoprosentit, voittojen ja häviöiden määrä tällä kaudella ja viimeisen kymmenen kauden aikana.
 
 ### Käyttäjät
-Alustavasti kaikki ovat normaaleja käyttäjiä, jotka pystyvät katselemaan tilastoja ja tehdä arvontoja.
+Kaikki ovat normaaleja käyttäjiä, jotka pystyvät katselemaan tilastoja ja tekemään arvontoja.
 

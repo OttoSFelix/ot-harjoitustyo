@@ -1,4 +1,4 @@
-#Arkkitehtuurikuvaus
+# Arkkitehtuurikuvaus
 
 ## Rakenne
 
@@ -117,7 +117,7 @@ sequenceDiagram
 ```
 
 
-##Sovelluslogiikka
+## Sovelluslogiikka
 
 Applikaation pääsovelluslogiikan hoitaa lähinnä kolme tiedostoa: db_search.py, web_search.py ja match_algoritms.py.
 db_search.py nimensä mukaisesti hakee tietoja tietokannasta ja palauttaa niitä ylempien tasojen komponenteille, esim. jos käytetään head to head calculatoria. web_search.py hakee pelaajien pelaamia matseja ja ratinglistoja netistä. Pelaajien pelaamat matsit haetaan kun suoritetaan initialize.py (invoke init).
