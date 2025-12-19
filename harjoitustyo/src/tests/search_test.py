@@ -3,7 +3,7 @@ import os
 from playerinfo import Player
 import requests
 from database_connection import get_database_connection
-from search import get_h2h_record, get_player_base_stats, get_players, total_score, reverse_score, top_10_base_stats, top_date, get_newest_rating, get_player_matches
+from search import get_h2h_record, get_player_base_stats, get_players, total_score, reverse_score, top_10_base_stats, top_date, get_rating, get_player_matches, get_seasonal_stats
 
 class TestSearch(unittest.TestCase):
 
@@ -60,16 +60,16 @@ class TestSearch(unittest.TestCase):
 
     def test_top_date(self):
         date = top_date()
-        self.assertEqual(date, '30.11.2025')
+        self.assertEqual(date, '07.12.2025')
 
     def test_get_newest_rating(self):
-        get_newest_rating(self.cursor)
+        get_rating(connection=self.connection)
         rows = []
         with open('ratinglist', 'r') as f:
                     for i in range(5):
                         rows.append(f.readline().strip())
         print(rows)
-        self.assertEqual(rows[1], 'Rating-julkaisu 30.11.2025')
+        self.assertEqual(rows[1], 'Rating-julkaisu 07.12.2025')
         if os.path.exists("ratinglist"):
             os.remove("ratinglist")
 
@@ -83,3 +83,7 @@ class TestSearch(unittest.TestCase):
     all time wins: 411
     all time losses: 197
     All time win rate: 67.6% """)
+        
+    def test_get_seasonal_stats(self):
+        season_stats = get_seasonal_stats('Nguyen Long', self.cursor)['2324']
+        self.assertEqual(season_stats, [57, 49, 8, '85.96%'])

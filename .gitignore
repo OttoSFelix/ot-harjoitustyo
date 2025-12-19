@@ -2,8 +2,9 @@
 __pycache__
 .coverage
 htmlcov
-.DS_Store
+*.DS_Store
 .coverage
 htmlcov
 rating_database.db
 ratinglist
+*.xlsx

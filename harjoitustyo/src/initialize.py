@@ -1,11 +1,12 @@
 import os
 import requests
-from search import get_newest_rating, get_players, get_player_matches, initialize_matches_table
+from db_search import get_players, initialize_matches_table
+from web_search import get_rating, get_player_matches
 from database_connection import get_database_connection
 session = requests.Session()
 connection = get_database_connection()
 cursor = connection.cursor()
-get_newest_rating(cursor)
+get_rating(connection=connection)
 if os.path.exists("ratinglist"):
     os.remove("ratinglist")
 initialize_matches_table()

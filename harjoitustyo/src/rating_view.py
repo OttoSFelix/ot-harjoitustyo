@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, constants
-from search import get_nth_players, get_player_base_stats, get_newest_rating, get_seasonal_stats, get_name
+from db_search import get_nth_players, get_player_base_stats, get_seasonal_stats, get_name
+from web_search import get_rating
 
 class RatingView:
     def __init__(self, root, change_to_home, cursor, connection):
@@ -56,12 +57,13 @@ class RatingView:
             lbl.pack(padx=5, pady=5, anchor="w")
 
     def _update_rating(self):
-        get_newest_rating(self._cursor)
+        get_rating(connection=self._connection)
         self._connection.commit()
         players = get_nth_players(100, self._cursor)
         stats_list = [get_player_base_stats(p.name, self._cursor) for p in players]
         self._update_scroll_view(stats_list)
-        self._update_status.config(text='Updated to newest rating', font=('Arial', 14), style='Green.TCheckbutton')
+        style = 'Green.TCheckbutton'
+        self._update_status.config(text='Updated to newest rating', font=('Arial', 14), style=style)
 
 
     def _initialize(self):
@@ -86,7 +88,8 @@ class RatingView:
         home_btn = ttk.Button(controls_frame, text="Home", command=self._change_to_home)
         home_btn.pack(side=constants.LEFT, padx=5)
 
-        update_btn = ttk.Button(controls_frame, text='Update to newest rating', command=self._update_rating)
+        upd_text = 'Update to newest rating'
+        update_btn = ttk.Button(controls_frame, text=upd_text, command=self._update_rating)
         update_btn.pack(side=constants.LEFT, padx=5)
         self._update_status = ttk.Label(header_frame)
         self._update_status.pack(side=constants.LEFT, padx=5)

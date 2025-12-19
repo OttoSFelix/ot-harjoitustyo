@@ -10,4 +10,3 @@ connection = sqlite3.connect(os.path.join(dirname, "..", "data", "rating_databas
 
 def get_database_connection():
     return connection
-

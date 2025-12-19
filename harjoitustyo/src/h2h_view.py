@@ -1,6 +1,5 @@
-import tkinter as tk
 from tkinter import ttk, constants
-from search import get_h2h_record
+from db_search import get_h2h_record
 
 class H2HView:
     def __init__(self, root, change_to_home, cursor):
