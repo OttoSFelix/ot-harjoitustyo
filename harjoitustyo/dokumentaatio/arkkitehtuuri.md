@@ -2,7 +2,73 @@
 
 ## Rakenne
 
-Sovellus toimii lähinnä tietokantatoiminnoilla, tietokantakyselyillä ja statistiikkojen laskemisella, jolloin tällä hetkellä on vain yksi luokkamuuttuja Player, johon tallennetaan pelaajan perustiedot.
+Alla on korkean tason arkkitehtuurikuvaus sovelluksen pääsovelluslogiikasta
+
+```mermaid
+graph TD
+    User((User)) -->|Interacts with| GUI
+
+    subgraph View_Layer [User Interface]
+        direction TB
+        GUI[gui.py<br>Main Interface Manager]
+        HomeView[home_view.py]
+        DrawView[drawview.py]
+        RatingView[rating_view.py]
+        H2HView[h2h_view.py]
+    end
+
+    subgraph Logic_Layer [Application Logic]
+        direction TB
+        Draw[draw.py<br>Draw Logic Core]
+        DrawGen[draw_generator.py<br>Visual Generation]
+        Algo[match_algoritms.py<br>Math/Sorting Logic]
+        Init[initialize.py<br>System Setup]
+    end
+
+    subgraph Data_Layer [Data Access]
+        direction TB
+        DBConn[database_connection.py<br>SQLite Connection]
+        Entries[entries.py<br>Entry Repository]
+        PlayerInfo[playerinfo.py<br>Player Model]
+        DBSearch[db_search.py<br>Local Search]
+        WebSearch[web_search.py<br>Web Scraper]
+    end
+
+    subgraph External [External Storage]
+        SQLite[(SQLite Database)]
+        TxtFiles[Text files<br>possible_classes.txt]
+        WebWorld[Internet]
+    end
+
+    GUI --> HomeView
+    GUI --> DrawView
+    GUI --> RatingView
+    GUI --> H2HView
+
+    DrawView --> DrawGen
+    RatingView --> DBSearch
+    RatingView --> WebSearch
+    H2HView --> WebSearch
+
+    DrawGen --> Draw
+    Draw --> Entries
+    Draw --> PlayerInfo
+    Draw --> SQLite
+    Draw --> TxtFiles
+    Entries -->|Writes| DBConn
+    
+    DBSearch --> DBConn
+    DBSearch --> PlayerInfo
+    Init -->|Creates Tables| DBConn
+    DBConn <--> SQLite
+
+    WebSearch <-->|Fetches Data| WebWorld
+    WebSearch --> Algo
+
+
+```
+
+Sovellus toimii lähinnä tietokantatoiminnoilla, tietokantakyselyillä ja statistiikkoja laskevilla algoritmeilla, tärkein luokkamuuttuja on Player, johon tallennetaan pelaajan perustiedot.
 Alla näkyy luokan toiminta muiden funktioiden kanssa:
 
 ```mermaid
