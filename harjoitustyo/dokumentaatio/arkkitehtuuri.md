@@ -112,5 +112,22 @@ sequenceDiagram
   search.py->>rating_database.db: SELECT * FROM All_matches WHERE player_name == 'Räsänen Aleksi' AND opponent_name == 'Pihkala Arttu';
   rating_database.db-->>search.py: matches
   search.py-->>UI: head to head record
+  UI->User: display head to head record to user
   UI->UI: display head to head record
 ```
+
+
+##Sovelluslogiikka
+
+Applikaation pääsovelluslogiikan hoitaa lähinnä kolme tiedostoa: db_search.py, web_search.py ja match_algoritms.py.
+db_search.py nimensä mukaisesti hakee tietoja tietokannasta ja palauttaa niitä ylempien tasojen komponenteille, esim. jos käytetään head to head calculatoria. web_search.py hakee pelaajien pelaamia matseja ja ratinglistoja netistä. Pelaajien pelaamat matsit haetaan kun suoritetaan initialize.py (invoke init).
+web_search.py tekee pyyntöjä match_algoritms.py:lle jäsentääkseen matsien tuloksia tietokantaan kirjoittamista varten. 
+Näiden kolmen tiedoston toiminta on kuvattu alla:
+
+```mermaid
+erDiagram
+   db_search.py -- (database)
+   web_search.py --{ (database)
+   web_search.py -- match_algoritms.py
+```
+  
