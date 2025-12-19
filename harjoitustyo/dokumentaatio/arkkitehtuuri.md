@@ -126,8 +126,8 @@ Näiden kolmen tiedoston toiminta on kuvattu alla:
 
 ```mermaid
 erDiagram
-   db_search.py -- (database)
-   web_search.py --{ (database)
-   web_search.py -- match_algoritms.py
+   db_search -- (database)
+   web_search --{ (database)
+   web_search -- match_algoritms
 ```
   
