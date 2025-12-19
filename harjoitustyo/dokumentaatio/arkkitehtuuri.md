@@ -23,12 +23,14 @@ Alla näkyy luokan toiminta muiden funktioiden kanssa:
 ```
 ## Käyttöliittymä
 
-Sovelluksessa kaikki ovat normaaleja käyttäjiä ja tällä hetkellä on kolme näkymää; kotinäkymä, ratinglista ja head to head calculator
+Sovelluksessa kaikki ovat normaaleja käyttäjiä ja sovelluksessa on neljä näkymää; kotinäkymä, ratinglista, draw generator ja head to head calculator
 Kotinäkymässä on napit:
 - `Ratinglist`
 - `Head to head calculator`
+- `Draw generator`
 
-Ratinglist käyttää search.py:n funktiota get_player_basestats(name) ja palauttaa jokaisen top 100 pelaajan perustatistiikat alkunäkymään. Head to head calculator käyttää search.py:n funktiota get_h2h_record(player1, player2) ja palauttaa kahden pelaajan välisen ottelusuhteen näkymään
+Ratinglist käyttää db_search.py:n funktiota get_player_basestats(name) ja palauttaa jokaisen top 100 pelaajan perustatistiikat alkunäkymään. Head to head calculator käyttää db_search.py:n funktiota get_h2h_record(player1, player2) ja palauttaa kahden pelaajan välisen ottelusuhteen näkymään.
+Draw generator käyttää draw_generator.py:n funktiota generate(filename, date), joka luo Draw luokkamuuttujan ja kutsuu draw.py:n funktioita luomaan arvonnan. Ennen tätä kutsutaan entries.py:n funktiota get_player_classes_from_file(file_path), joka lukee ilmoittautumiset annetusta ilmoittautumis excel tiedostosta.
 
  
 Head to head recordin näyttäminen käyttäjälle on kuvattu seuraavassa sekvenssikaaviossa:
