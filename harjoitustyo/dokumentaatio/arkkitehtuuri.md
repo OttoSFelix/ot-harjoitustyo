@@ -126,8 +126,8 @@ Näiden kolmen tiedoston toiminta on kuvattu alla:
 
 ```mermaid
 flowchart TD
-   db_search -- reads -- [(database)]
-   web_search -- inserts --> [(database)]
-   web_search -- match_algoritms
+   db_search---|reads|[(database)]
+   web_search-- inserts -->[(database)]
+   web_search --- match_algoritms
 ```
   
