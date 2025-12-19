@@ -12,4 +12,13 @@
 | 28.11 | 4    | Opettelin graafisen käyttöliittymän rakentamista |
 | 29.11 | 2    | Testien määrää kasvatettu, samalla testikattavuutta. Pylint virheiden määrää vähennetty tekemällä koodista laadukkaampaa |
 | 30.11 | 5    | Graafinen käyttöliittymä toimii nyt kolmella näkymällä |
-| yht   | 34   |
+| 05.12 | 2    | rating_view näkymään lisätty pelaajan kausikohtaiset statistiikat ja nappi, josta voi päivittää uusimpaan ratinglistaan |
+| 10.12 | 5    | entries.py luotu ja onnistuneesti lukee jokaisen pelaajan pelaamat luokat annetusta excel tiedostosta |
+| 12.12 | 3    | draw.py luotu, joka onnistuneesti luo arvonnat annetulle luokalle |
+| 13.12 | 2    | draw_generator.py aloitettu ja tutkittu miten excel tiedoston voi luoda pythonilla. Docstring kuvaus aloitettu |
+| 14.12 | 4    | draw_generator.py toimii ja luo draw.py:n luokan Draw avulla arvonnat jokaiseen luokkaan ja generoi excel tiedoston oikeassa muodossa |
+| 16.12 | 4    | drawview näkymä luotu ja se toimii odotetulla tavalla. Lisätty uusia toiminnallisuuksia, kuten päiväkohtaisen ratingin haku, jotta oikeanlaisen arvonnan generointi onnistuu |
+| 17.12 | 2    | Koodin laatua paranneltu ja search.py jaettu kolmeen eri tiedostoon: db_search.py, web_search.py ja match_algoritms.py. Docstring kuvaus viimeistelty |
+| 19.12 | 5    | Sovelluslogiikan yleinen arkkitehtuurikuvaus tehty ja kaikki muu dokumentaatio viety loppuun asti |
+
+| yht   | 61   |
