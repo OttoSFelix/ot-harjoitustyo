@@ -5,7 +5,7 @@ By **OttoSFelix**
 # Table Tennis Statistics app
 Applikaatiolla pystyy hakemaan top 100 pelaajien perustatistiikkoja ja pelaajien välisiä ottelusuhteita ja luomaan arvontoja annettujen ilmoittautumislitojen perusteella.
 
-[Viikko 5 release](https://github.com/OttoSFelix/ot-harjoitustyo/releases/tag/Viikon_5_deadline)
+[Final release](https://github.com/OttoSFelix/ot-harjoitustyo/releases/tag/Final_release)
  
 ## Dokumentaatio
 
