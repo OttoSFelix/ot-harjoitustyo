@@ -14,6 +14,7 @@ Applikaatiolla pystyy hakemaan top 100 pelaajien perustatistiikkoja ja pelaajien
 - [vaatimusmäärittely](./harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
 - [työaikakirjanpito](./harjoitustyo/dokumentaatio/tyoaikakirjanpito.md)
 - [changelog](./harjoitustyo/dokumentaatio/changelog.md)
+- [Testausdokumentaatio](https://github.com/OttoSFelix/ot-harjoitustyo/blob/main/harjoitustyo/dokumentaatio/testaus.md)
 
 
 ## Asennus
