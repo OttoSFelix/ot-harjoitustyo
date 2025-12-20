@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import filedialog
 import os
 from draw_generator import generate
 from web_search import validate_date
@@ -36,7 +37,7 @@ class DrawView:
         self._frame.pack()
 
     def _select_file(self):
-        self._file = tk.filedialog.askopenfilename()
+        self._file = filedialog.askopenfilename()
         self._file_label.config(text=self._file)
 
     def _generate(self):
@@ -44,8 +45,11 @@ class DrawView:
         validate_text = validate_date(date)
         if validate_text:
             self._date_validation.config(text = validate_text)
-        generate(self._file, date)
-        os.system("open Competition_Draw.xlsx")
+        status = generate(self._file, date)
+        if status:
+            os.system("open Competition_Draw.xlsx")
+        else:
+            self._date_validation.config(text='Could not generate draw from file', foreground='red')
 
     def destroy(self):
         self._frame.destroy()

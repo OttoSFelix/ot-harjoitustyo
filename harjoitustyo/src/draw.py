@@ -10,6 +10,7 @@ class Draw:
             self.file_name = file_name
             self.connection = connection
             self.cursor = self.connection.cursor()
+            self.success = True
             self.create_classes()
 
     def get_possible_classes(self):
@@ -35,18 +36,21 @@ class Draw:
         cursor.execute('CREATE TABLE Entries(class, player)')
         all_classes = set()
         possible_classes = self.get_possible_classes()
-        
-        for player, classes in entries.items():
-            for c in classes:
-                if ',' in c:
-                    cls = c.split(',')
-                    for luokka in cls:
-                        all_classes.add(luokka.strip())
-                        cursor.execute('INSERT INTO Entries(class, player) values(?, ?)', (luokka.strip(), player.strip()))
-                else:
-                    all_classes.add(c.strip())
-                    cursor.execute('INSERT INTO Entries(class, player) values(?, ?)', (c.strip(), player.strip()))
-        self.connection.commit()
+        try:
+            for player, classes in entries.items():
+                for c in classes:
+                    if ',' in c:
+                        cls = c.split(',')
+                        for luokka in cls:
+                            all_classes.add(luokka.strip())
+                            cursor.execute('INSERT INTO Entries(class, player) values(?, ?)', (luokka.strip(), player.strip()))
+                    else:
+                        all_classes.add(c.strip())
+                        cursor.execute('INSERT INTO Entries(class, player) values(?, ?)', (c.strip(), player.strip()))
+            self.connection.commit()
+        except:
+            self.success = False
+            return
 
         all_classes = list(all_classes)
         for c in all_classes:

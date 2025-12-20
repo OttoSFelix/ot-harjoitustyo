@@ -172,7 +172,10 @@ def generate(file_name, date):
     date = '-'.join(date)
     get_rating(date, connection)
     draw = Draw(file_name, connection)
+    if not draw.success:
+        return False
     cursor.execute('SELECT class FROM Entries GROUP BY class')
     rows = cursor.fetchall()
     classes = [row[0] for row in rows]
     create_competition_excel(classes, draw)
+    return True
