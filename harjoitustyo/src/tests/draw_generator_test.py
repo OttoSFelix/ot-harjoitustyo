@@ -23,6 +23,10 @@ class TestDrawGenerator(unittest.TestCase):
             (1, 3, 2), (3, 4, 5), (1, 2, 4), (4, 5, 1), (2, 3, 5)
         ])
 
+    def test_get_match_schedule_empty(self):
+        schedule = get_match_schedule(6)
+        self.assertEqual(schedule, [])
+
     def test_format_cell(self):
         mock_ws = MagicMock()
         mock_cell = MagicMock()
