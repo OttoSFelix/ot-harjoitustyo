@@ -15,7 +15,7 @@ Kaikkia luokkia ja funktioita on testattu standardeilla yksikkötesteillä, mutt
 ## Testikattavuus
 Testikattavuus ilman käyttöliittymää on noin 65%. Tämä on hieman alhainen, johtuen siitä, että excel tiedostojen lukemista ja generoimista on vaikea testata.
 Alla näkyy testikattavuus:
-![](./harjoitustyo/kuvat/testikattavuus.png)
+![](./kuvat/testikattavuus.png)
 
 
 ## Järjestelmätestaus
